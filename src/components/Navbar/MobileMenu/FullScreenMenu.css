@@ -1,0 +1,84 @@
+/* src/components/FullScreenMenu.css */
+
+.fullscreen-menu {
+  display: none;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 75px);
+  background-color: rgb(4, 0, 218);
+  color: white;
+  z-index: 1000;
+  /* align-items: center;
+    justify-content: center;
+    text-align: center; */
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-100%);
+}
+
+.fullscreen-menu.open {
+  display: flex;
+  transform: translateY(0);
+}
+
+.fullscreen-menu-transition-enter {
+  transform: translateX(-100%); 
+}
+
+.fullscreen-menu-transition-enter-active {
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.fullscreen-menu-transition-exit {
+  transform: translateX(0);
+}
+
+.fullscreen-menu-transition-exit-active {
+  transform: translateX(-100%);
+  transition: transform 300ms ease-in-out;
+}
+
+.menu-list {
+  list-style: none;
+  padding-left: 30px;
+}
+
+.menu-list li {
+  /* margin: 20px ; */
+  padding: 20px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.877);
+}
+
+.menu-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-list a:hover {
+  color: #ddd;
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.submenu li {
+  margin: 10px 0;
+}
+
+.submenu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.submenu a:hover {
+  color: #ddd;
+}

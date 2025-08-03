@@ -1,0 +1,116 @@
+.accordion-box {
+    position: relative;
+  }
+  .accordion-box .block {
+    position: relative;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .accordion-box .block.active-block {
+    -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 10px 60px rgba(0, 0, 0, 0.07);
+  }
+  .accordion-box .block .acc-btn {
+    position: relative;
+    font-size: 18px;
+    line-height: 25px;
+    background-color: #fff;
+    color: var(--theme-color1);
+    font-weight: 700;
+    cursor: pointer;
+    padding: 25px 40px;
+    padding-right: 70px;
+    border-radius: 12px;
+    letter-spacing: -0.04em;
+    border: 1px solid #e2e2e2;
+    overflow: hidden;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .accordion-box .block .acc-btn .icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 35px;
+    width: 35px;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    color: var(--theme-color1);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .accordion-box .block .acc-btn.active {
+    color: var(--theme-color2);
+    background-color: #ffffff;
+    border-radius: 12px 12px 0 0;
+  }
+  .accordion-box .block .acc-btn.active .icon {
+    color: var(--theme-color2);
+  }
+  .accordion-box .block .acc-btn.active .icon:before {
+    content: "\f106";
+  }
+  .accordion-box .block .acc-content {
+    position: relative;
+    display: none;
+  }
+  .accordion-box .block .acc-content .content {
+    position: relative;
+    padding: 20px 40px 30px;
+    border: 1px solid #e2e2e2;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+  }
+  .accordion-box .block .acc-content .content .text {
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    color: #808287;
+    margin-bottom: 0;
+  }
+  .accordion-box .block .acc-content.current {
+    display: block;
+  }
+  .accordion-box.style-two {
+    counter-reset: count;
+    margin-top: 20px;
+  }
+  .accordion-box.style-two .block {
+    margin-bottom: 10px;
+  }
+  .accordion-box.style-two .block .acc-btn {
+    padding-left: 55px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-bottom: 0;
+    color: var(--theme-color1);
+  }
+  .accordion-box.style-two .block .acc-btn:before {
+    position: absolute;
+    left: 35px;
+    top: 0;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 25px 0;
+    color: var(--theme-color2);
+    content: "1.";
+    z-index: 2;
+    counter-increment: count;
+    content: counter(count) ".";
+  }
+  .accordion-box.style-two .block .acc-btn .icon {
+    font-size: 14px;
+    color: var(--theme-color2);
+  }
+  .accordion-box.style-two .block .acc-btn.active .icon {
+    color: var(--theme-color1);
+  }
+  .accordion-box.style-two .block .acc-btn.active .icon:before {
+    content: "\f068";
+  }
+  .accordion-box.style-two .block .content {
+    padding-top: 0;
+  }

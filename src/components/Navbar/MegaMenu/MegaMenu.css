@@ -1,0 +1,72 @@
+/* Navbar2.css */
+.mega-menu-content {
+    /* display: none; Start hidden */
+    position: absolute;
+    left: 0;
+    top: 101%;
+    width: 100%;
+    /* background-color: #002faf; */
+    background-color: #ffffff;
+    box-shadow: 1px 15px 20px rgba(197, 197, 227, 0.2);
+    padding: 30px;
+    box-sizing: border-box;
+    z-index: 999999;
+    border-bottom: 5px solid blueviolet;
+  }
+  
+  .mega-menu-section {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  .mega-menu-section h3 {
+    margin-top: 0;
+    font-size: 20px;
+    /* color: rgb(96, 1, 173); */
+    color: #1e00c5;
+    /* color: #deff4d; */
+    font-weight: 700;
+  }
+
+  .mega-menu-section h3:hover {
+    color: rgb(89, 0, 255);
+  }
+  
+  .mega-menu-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .mega-menu-section ul li {
+    margin: 5px 0;
+  }
+  
+  .mega-menu-section ul li a {
+    text-decoration: none;
+    /* color: #333; */
+    /* color: #b6d0fe; */
+    color: #1a0077;
+    font-weight: 300;
+  }
+  
+  .mega-menu-section ul li a:hover {
+    text-decoration: underline;
+    /* color: var(--theme-color2)red; */
+  }
+  
+  /* Clear floats */
+  .mega-menu:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .nav-item.mega-menu:hover .mega-menu-content {
+    display: block; /* Display the menu when hovering over the menu item */
+  }
+  
+  .mega-menu-content:hover {
+    display: block; /* Ensure visibility on hover */
+  }
+  

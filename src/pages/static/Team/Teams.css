@@ -1,0 +1,140 @@
+/***
+
+====================================================================
+    team Section
+====================================================================
+
+***/
+.team-section {
+    position: relative;
+    padding: 120px 0 80px;
+    overflow: hidden;
+  }
+  
+  .team-block-two {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .team-block-two .inner-box {
+    position: relative;
+    padding-right: 40px;
+  }
+  .team-block-two .inner-box:hover .image img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .team-block-two .inner-box:hover .social-links {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  .team-block-two .image-box {
+    position: relative;
+  }
+  .team-block-two .image-box:before {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    bottom: 30px;
+    right: -30px;
+    background-image: url(https://coretech-prod-s3.s3.ap-south-1.amazonaws.com/public/images/icons/pattern-1.png);
+    content: "";
+    border-radius: 10px;
+  }
+  .team-block-two .image-box .image {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .team-block-two .image-box .image img {
+    width: 100%;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+  }
+  .team-block-two .info-box {
+    position: relative;
+    padding: 20px 0 0;
+  }
+  .team-block-two .info-box .name {
+    font-weight: 800;
+    z-index: 2;
+    margin-bottom: 7px;
+  }
+  .team-block-two .info-box .name:hover {
+    color: var(--theme-color2);
+  }
+  .team-block-two .info-box .designation {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6a6a6a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 2;
+    line-height: 1em;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+  }
+  .team-block-two .share-icon {
+    position: absolute;
+    right: 20px;
+    bottom: -25px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: var(--bg-theme-color2);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    border-radius: 7px;
+    z-index: 3;
+  }
+  .team-block-two .social-links {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 15px 0;
+    margin-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #ffffff;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 8px 8px 0 0;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+  }
+  .team-block-two .social-links a {
+    position: relative;
+    height: 35px;
+    width: 50px;
+    display: block;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    color: var(--theme-color1);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  .team-block-two .social-links a:hover {
+    color: var(--theme-color2);
+  }

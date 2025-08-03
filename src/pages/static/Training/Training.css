@@ -1,0 +1,12 @@
+.training-featured-column .inner-box {
+
+}
+
+.training-featured-column .inner-box svg {
+    font-size: 28px;
+    color: var(--theme-color2);
+    margin-bottom: 10px;
+}
+.training-featured-column .inner-box svg:hover {
+    color: rgb(55, 0, 255);
+}
